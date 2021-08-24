@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+.barra{
+    position: fixed;
+    background-color: #333333   ;
+    width: 4%;
+    height: 100%;
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.menu div{
+    width: 80%;
+    height: 0.7vh;
+    margin: 9% 0 0 0;
+    background-color: white;
+    border-radius: 10px;
+}
+.nav{
+    height: 50%;
+    border-radius: 0 10px 0 0;
+    background-color: #606060;
+    color: white;
+}
+.barraContato{
+    height: 50%;
+    background-color: white;
+    border-radius: 0 10px 0 0;
+}
+.navegacao{
+    margin-left: 4%;
+    position: fixed;
+    width: 70vh;
+    height: 100%;
+    font-size: 4vh;
+    overflow: auto;
+
+    transform: translateX(-143%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.navegacao p{
+    transition:cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.navegacao p:hover{
+    background-color: #3d3c3c;
+    color: white;
+    padding: 10px;
+}
+
+.active{
+    transform: translateX(0);
+}
+.navegacao p{
+    padding: 15px 40px 15px 50px;
+}
+.final{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    width: 8vh;
+    
+}
+header{
+    margin-left: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("/modern-business-center_Easy-Resize.com.jpg");
+    background-size: cover;
+
+}
+.logo{
+    width: 15%;
+}
+.contatoImg{
+    display: flex;
+    align-items: center;
+}
+.contatoImg p{
+    padding: 20px;
+    transition: .5s;
+    border-radius: 10px;
+    font-size: 5vh;
+    color: #333333;
+}
+.contatoImg p:hover{
+    background-color: goldenrod;
+}
+.imgContato{
+    width: 9vh;
+}
+.cabecario{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+}
+.trabalho{
+    text-align: center;
+}
+.trabalho h1{
+    color:goldenrod;
+    font-size: 9vh;
+    text-shadow: 0.05em 0.05em 0.1em #606060;
+
+}
+.trabalho p{
+    font-size: 4.5vh;
+    color: #ffff;
+    text-shadow: 0.1em 0.1em 0.1em #333;
+
+}
+
+.saibaMais{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: #333333b7;
+    margin: 0 40% 10% 40%;
+
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+		-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+		box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+/*CORPO*/
+.corpo{
+    max-width: 1366px;
+    text-align: center;
+    margin: auto;
+    background-color: #EEECE9;
+    padding-top: 20px;
+}
+.titulo{
+    padding: 50px;
+}
+.titulo h1{
+    color: rgb(167, 121, 7);
+    font-size: 2vw;
+}
+.titulo p{
+    color: #414040;
+    font-size: 4vh;
+}
+.servicos{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.construcoes{
+    cursor: pointer;
+}
+.construcoes:hover{
+    text-decoration: underline;
+}
+.entregues{
+    cursor: pointer;
+    
+}
+.entregues:hover{
+    text-decoration: underline;
+}
+.traco{
+    text-decoration: underline;
+}
+.constDentro{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+.constDentro ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: justify;
+    background-color: #EEECE9;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.constDentro li{
+    width: 30%;
+    margin: 1%;
+    margin-bottom: 2%;
+
+    max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.constDentro li:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
+    background-color: rgba(51, 51, 51, 0.096);
+}
+.constDentro p{
+    font-size: 23px;
+    margin: 0 8px;
+    color: #414040;
+}
+.constDentro h3{
+    color: rgb(167, 121, 7);
+    margin: 0 8px;
+    font-size: 30px;
+}
+.constDentro img{
+    width: 100%;
+}
+/*--------------------------*/
+/*APARECER*/
+
+.aparecerEntregues{
+    display: none;
+}
+
+/**/
+button{
+    margin-top: 25px;
+    font-size: 20px;
+    width: 180px;
+    height: 50px;
+}
+
+/*Satisfacao*/
+.satisfacao{
+    margin-top: 25px;
+    height: 650px;
+    background-color: chocolate;
+}
+
+/*Sobre*/
+.sobre{
+    display: flex;
+    padding: 70px 0;
+}
+.img{
+    width: 50%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.descricao{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.descricao h1{
+    color: goldenrod;
+    font-size: 40px;
+}
+.descDentro{
+   width: 90%;
+}
+
+/* RODAPE */
+
+footer{
+    background-color: #575757;
+    margin-left: 4%;
+    color: white;
+}
+footer h1{
+    text-align: center;
+}
+.rodape{
+    max-width: 1366px;
+    margin: auto;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    padding-top: 50px;
+}
+.rodape ul{
+    list-style-type: none;
+}
+.rodape li{
+    margin: 10px 0;
+}
+.rodape h3{
+    margin-bottom: 20px;
+}
+.logoRodape{
+    width: 15%;
+}
+
+/* -------------------------------------------------------- */
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 1s;  
+}
+[data-anime = "left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime = "right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime = "top"] {
+    transform: translate3d(0,-50px, 0);
+}
+[data-anime = "bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+/*----------------------------------------------------------*/
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .barra{
+        width: 7%;
+    }
+    header{
+        margin-left: 7%;
+    }
+    .navegacao{
+        margin-left: 7%;
+    }
+    .corpo{
+        margin-left: 7%;
+    }
+    .constDentro li{
+        width: 46%;
+    }
+
+    footer{
+        margin-left: 7%;
+
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .barra{
+        width: 15%;
+    }
+    header{
+        margin-left: 15%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .contatoImg p{
+        font-size: 2vh;
+    }
+    .imgContato{
+        width: 4.5vh;
+    }
+    .navegacao{
+        margin-left: 15%;
+        width: 80%;
+        font-size: 2.5vh;
+
+    }
+    .trabalho h1{
+        font-size: 6vh;
+    }
+    .trabalho p{
+        font-size: 2.5vh;
+    }
+    .titulo h1{
+        font-size: 6vw;
+    }
+    .titulo p{
+        font-size: 4vw;
+    }
+    .corpo{
+        margin-left: 15%;
+    }
+    .constDentro li{
+        width: 100%;
+        margin-bottom: 11%;
+    }
+    .satisfacao{
+        height: 320px;
+        z-index: 2;
+    }
+    .sobre{
+        display: block;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    .descricao{
+        width: 100%;
+    }
+
+    footer{
+        margin-left: 10%;
+    }
+    .rodape{
+        display: block;
+        text-align: center;
+    } 
+    .mapa{
+        margin-top: 35px;
+    }
+    .saibaMais{
+        margin: 40% auto;
+        padding: 20px;
+    }
+    .contatoRodape{
+        margin-top: 35px;
+    }
+    .redeSociais{
+        margin-top: 35px;
+    }
+    .logoRodape{
+        width: 29%;
+        margin: auto;
+    }
+}
